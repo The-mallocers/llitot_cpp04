@@ -1,7 +1,7 @@
 #include "../inc/Character.hpp"
 
 Character::Character(const std::string &name) : _name(name) {
-	std::cout << MAGENTA << "Character constructor called" << RESET << std::endl;
+	std::cout << MAGENTA << "Character: "<< _name << " constructor called" << RESET << std::endl;
 	for (int i = 0;  i < 4; i++) {
 		_inventory[i] = NULL;
 	}
@@ -17,7 +17,8 @@ Character &Character::operator=(const Character &other) {
 	if (this != &other) {
 		_name = other._name;
 		for (int i = 0; i < 4; i++) {
-			delete _inventory[i];
+			if (_inventory[i])	
+                delete _inventory[i];
 			if (other._inventory[i])
 				_inventory[i] = other._inventory[i];
 			else
@@ -29,8 +30,9 @@ Character &Character::operator=(const Character &other) {
 }
 
 Character::~Character() {
-    std::cout << MAGENTA << "Character destructor called" << RESET << std::endl;
+    std::cout << MAGENTA << "Character: "<< _name << " destructor called" << RESET << std::endl;
 	for (int i = 0; i < 4; i++)
+	if (_inventory[i])
 		delete _inventory[i];
 }
 

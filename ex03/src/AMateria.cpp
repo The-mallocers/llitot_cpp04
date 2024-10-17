@@ -31,5 +31,5 @@ std::string const & AMateria::getType() const {
 }
 
 void AMateria::use(ICharacter &target) {
-    std::cout << "* c'ant do anything to " << target.getName() << " *" << std::endl;
+    std::cout << "* c'ant do anything to " << target.getName() << " *" << std::endl;   
 }

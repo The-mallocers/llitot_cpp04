@@ -8,6 +8,7 @@ SRCS		=	$(SRC_DIR)/main.cpp \
 				$(SRC_DIR)/Character.cpp \
 				$(SRC_DIR)/Cure.cpp \
 				$(SRC_DIR)/Ice.cpp \
+				$(SRC_DIR)/MateriaSource.cpp \
 			
 
 OBJS 		=	$(patsubst $(SRC_DIR)/%.cpp, $(OBJS_DIR)/%.o, $(SRCS))
@@ -20,6 +21,8 @@ INC		=	$(INC_DIR)/AMateria.hpp \
 			$(INC_DIR)/Cure.hpp \
 			$(INC_DIR)/Ice.hpp \
 			$(INC_DIR)/ICharacter.hpp \
+			$(INC_DIR)/IMateriaSource.hpp \
+			$(INC_DIR)/MateriaSource.hpp \
 
 # colors
 GREEN	= \033[1;32m
