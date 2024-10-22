@@ -13,7 +13,7 @@ WrongCat::WrongCat(const WrongCat &toCopy) {
 
 /* Member function */
 void WrongCat::makeSound() const{
-	std::cout << _type << ": MIAOUUUUU !" << std::endl;
+	std::cout << _type << ": ! UUUUUOAIM" << std::endl;
 }
 
 /* Overload */

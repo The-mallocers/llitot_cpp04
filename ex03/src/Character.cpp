@@ -44,18 +44,21 @@ void Character::equip(AMateria* m) {
 
 	if (!m)
 		return ;
-
 	for (int i = 0; i < 4; i++) {
 		if (!_inventory[i]) {
+			std::cout << "equip " << m->getType() << std::endl; 
 			_inventory[i] = m;
 			return ;
 		}
 	}
+	delete m;
 }
 
 void Character::unequip(int idx) {
-	if (idx >= 0 && idx < 4)
+	if (idx >= 0 && idx < 4) {
+		std::cout << "unequip is " << idx << " materia" << std::endl;
 		_inventory[idx] = NULL;
+	}
 }
 
 void Character::use(int idx, ICharacter &target) {

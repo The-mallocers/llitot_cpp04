@@ -6,7 +6,7 @@
 class Dog : public Animal {
 
     public:
-     /* Constructor */
+        /* Constructor */
         Dog();
 
         /* Copy Constructor */

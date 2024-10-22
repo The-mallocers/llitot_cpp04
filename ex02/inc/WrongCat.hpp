@@ -6,7 +6,7 @@
 class WrongCat : public WrongAnimal {
 
     public:
-     /* Constructor */
+        /* Constructor */
         WrongCat();
 
         /* Copy Constructor */

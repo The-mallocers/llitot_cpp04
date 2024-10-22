@@ -16,3 +16,17 @@ AMateria* Ice::clone() const {
 void Ice::use(ICharacter &target) {
     std::cout << "* shoots an ice bolt at " << target.getName() << " *" << std::endl;
 }
+
+Ice::Ice(const Ice &other) {
+    *this = other;
+}
+
+Ice &Ice::operator=(const Ice &other) {
+    std::cout << MAGENTA << "Ice copy constructor called" << RESET << std::endl;
+
+	if (this != &other) {
+        _type = other._type;
+    }
+
+    return (*this);
+}

@@ -12,7 +12,7 @@ WrongAnimal::WrongAnimal(const WrongAnimal &toCopy) {
 
 /* Member function */
 void WrongAnimal::makeSound() const{
-	std::cout << _type << ": unknown animal" << std::endl;
+	std::cout << _type << ": known animal" << std::endl;
 }
 
 std::string WrongAnimal::getType() const{

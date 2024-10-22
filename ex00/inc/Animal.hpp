@@ -8,6 +8,7 @@
 #define RESET	"\033[0m"
 #define MAGENTA	"\033[35m"
 #define YELLOW "\033[33m"
+#define BLUE "\033[1;34m"
 #define NLINE std::cout << std::endl; 
 
 class Animal {
