@@ -15,7 +15,7 @@ void Cure::use(ICharacter &target) {
     std::cout << "* heals " << target.getName() << "'s wounds *" << std::endl;
 }
 
-Cure::Cure(const Cure &other) {
+Cure::Cure(const Cure &other) : AMateria(other) {
     *this = other;
 }
 

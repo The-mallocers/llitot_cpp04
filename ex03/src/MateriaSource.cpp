@@ -2,9 +2,6 @@
 
 MateriaSource::MateriaSource() : _materias() {
 	std::cout << MAGENTA << "MateriaSource constructor called" << RESET << std::endl;
-	// for (int i = 0; i < 4; i++) {
-	// 	_materias[i] = NULL;
-	// }
 }
 
 MateriaSource::MateriaSource(const MateriaSource &other) {

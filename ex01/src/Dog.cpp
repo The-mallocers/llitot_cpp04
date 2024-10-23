@@ -33,11 +33,10 @@ Dog &Dog::operator=(const Dog &src) {
 	std::cout << MAGENTA << "Dog copy assignment called" << RESET << std::endl;
 
 	if (this != &src) {
+		this->_type = src._type;
 
 		delete this->_brain;
 		this->_brain = new Brain;
-
-		this->_type = src._type;
 		*this->_brain = *src._brain; 
 	}
 

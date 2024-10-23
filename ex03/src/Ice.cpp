@@ -2,7 +2,6 @@
 
 Ice::Ice() : AMateria("ice") {
 	std::cout << MAGENTA << "Ice constructor called" << RESET << std::endl;
-
 }
 
 Ice::~Ice() {
@@ -17,7 +16,7 @@ void Ice::use(ICharacter &target) {
     std::cout << "* shoots an ice bolt at " << target.getName() << " *" << std::endl;
 }
 
-Ice::Ice(const Ice &other) {
+Ice::Ice(const Ice &other) : AMateria(other) {
     *this = other;
 }
 
